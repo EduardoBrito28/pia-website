@@ -30,52 +30,54 @@ import { Link } from 'react-router-dom';
 export default function HomePage() {
     return (
         <Fragment>
-            <div className='flex items-center flex-col h-auto'>
-                <header className='flex items-center flex-col justify-center m-auto'>
-                    <div className='p-[100px] flex justify-center items-center flex-col'>
+            <div className='flex items-center flex-col h-[100vh]'>
+                <header className='w-[90%] flex items-center flex-col justify-center m-auto'>
+                    <div className='flex justify-center items-center flex-col gap-3'>
                         <div className='py-5'>
-                            <span className='bg-white rounded-md py-1 px-3 text-green-700 cursor-pointer'>Patraforma</span>
+                            <span className='bg-white rounded-sm py-1 px-3 text-green-700 uppercase'>Plataforma</span>
                         </div>
-                        <div className='flex justify-center items-center flex-col'>
+                        <div className='  flex justify-center items-center flex-col'>
                             <h1 className='text-center text-white'>Agora já podes fazer os seus pagamentos a partir do seu computador ou dispositivo móvel, sem se locomover ao colégio, universidade e muito menos ao banco.</h1>
                             <div className='p-3'>
-                                <h4 className='text-[#9EA8CA]'>É mais simples, fácil e seguro</h4>
+                                <h4 className='text-slate-300 border-b px-1 '>É mais simples, fácil e seguro</h4>
                             </div>
                         </div>
-                        <div className='px-[30px]'>
-                            <button className='bg-white rounded-lg py-[15px] px-5 outline-none text-white border-none'>CADASTRE-SE GRATUITAMENTE</button>
-                            <button className='m-5 bg-[#7745FF] uppercase'>DE UMA OLHADA NOS NOSSOS PLANOS </button>
+                        <div className='px-[30px] mt-7'>
+                            <button className='bg-[#7745FF] rounded-sm py-[15px] px-5 outline-none text-white border-none'>CADASTRE-SE GRATUITAMENTE</button>
+                            <button className='m-5 bg-white text-[#7745FF] rounded-sm py-[15px] px-5 outline-none border-none uppercase'>DE UMA OLHADA NOS NOSSOS PLANOS </button>
                         </div>
                     </div>
                 </header>
             </div>
 
             <div className='flex flex-col justify-center'>
-                <section className='flex flex-row justify-between p-3'>
+                <section className='flex flex-row justify-between p-3 '>
                     <div className='w-[40%] flex items-center flex-col'>
                         <div>
-                            <h3 className='text-white'>Identifica já abaixa a sua instituição</h3>
+                            <h3 className='text-white text-lg'>Identifique a Instituição a Qual Pertence</h3>
                         </div>
-                        <div className='flex items-center justify-between w-[80%] h-[100px]'>
-                            <div style={{ cursor: 'pointer' }}><AiOutlineLeftCircle size={30} color="#B6CDCF" /></div>
+                        <div className='flex items-center justify-between w-[80%] h-[100px]'>{/* 
+                            <div style={{ cursor: 'pointer' }}><AiOutlineLeftCircle size={30} color="#B6CDCF" /></div> */}
                             <li className='flex items-center object-cover'><Link to=''><img className='w-20 h-20 rounded-[50%] p-3' src={cm1} alt="colegio 1" /></Link></li>
                             <li className='flex items-center object-cover'><Link to=''><img className='w-20 h-20 rounded-[50%] p-3' src={cm2} alt="colegio 2" /></Link></li>
                             <li className='flex items-center object-cover'><Link to=''><img className='w-20 h-20 rounded-[50%] p-3' src={cm3} alt="colegio 3" /></Link></li>
                             <li className='flex items-center object-cover'><Link to=''><img className='w-20 h-20 rounded-[50%] p-3' src={cm4} alt="colegio 4" /></Link></li>
                             <li className='flex items-center object-cover'><Link to=''><img className='w-20 h-20 rounded-[50%] p-3' src={cm5} alt="colegio 5" /></Link></li>
-                            <div style={{ cursor: 'pointer' }}><AiOutlineRightCircle size={30} color="#B6CDCF" /></div>
+                            {/* <div style={{ cursor: 'pointer' }}><AiOutlineRightCircle size={30} color="#B6CDCF" /></div> */}
                         </div>
                     </div>
                     <div className='w-[40%] flex items-center flex-col'>
-                        <div><h3>Identifica já abaixa a sua instituição</h3></div>
-                        <div className='flex items-center  w-[80%] h-[100px]'>
-                            <div style={{ cursor: 'pointer' }}><AiOutlineLeftCircle size={30} color="#B6CDCF" /></div>
+                        <div>
+                            <h3 className='text-white text-lg'>Identifique a Instituição a Qual Pertence</h3>
+                        </div>
+                        <div className='flex items-center justify-between w-[80%] h-[100px]'>
+                            {/* <div style={{ cursor: 'pointer' }}><AiOutlineLeftCircle size={30} color="#B6CDCF" /></div> */}
                             <li className='flex items-center object-cover'> <Link to=''> <img className='w-20 h-20 rounded-[50%] p-3' src={um1} alt="universidade 1" /> </Link></li>
                             <li className='flex items-center object-cover'> <Link to=''> <img className='w-20 h-20 rounded-[50%] p-3' src={um2} alt="universidade 2" /> </Link></li>
                             <li className='flex items-center object-cover'> <Link to=''> <img className='w-20 h-20 rounded-[50%] p-3' src={um3} alt="universidade 3" /> </Link></li>
                             <li className='flex items-center object-cover'> <Link to=''> <img className='w-20 h-20 rounded-[50%] p-3' src={um4} alt="universidade 4" /> </Link></li>
                             <li className='flex items-center object-cover'> <Link to=''> <img className='w-20 h-20 rounded-[50%] p-3' src={um5} alt="universidade 5" /> </Link></li>
-                            <div style={{ cursor: 'pointer' }}><AiOutlineRightCircle size={30} color="#B6CDCF" /></div>
+                            {/* <div style={{ cursor: 'pointer' }}><AiOutlineRightCircle size={30} color="#B6CDCF" /></div> */}
                         </div>
                     </div>
                 </section>
