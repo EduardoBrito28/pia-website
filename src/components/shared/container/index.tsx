@@ -6,7 +6,7 @@ interface contain {
 
 export default function Container({children}:contain) {
     return (
-      <div className="w-full flex flex-col">
+      <div className="flex flex-col max-w-[1480px] w-[96%]">
         {children}
       </div>
     )

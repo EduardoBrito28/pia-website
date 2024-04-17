@@ -8,7 +8,7 @@ interface layout {
 
 export default function LayoutStruture({ children }: layout) {
 	return (
-		<div className='flex flex-col max-w-[1480px] w-[96%] m-auto'>
+		<div className='flex flex-col m-auto'>
 			<Header />
 			{children}
 			<Footer/>
