@@ -1,8 +1,8 @@
 import { Route, Routes } from 'react-router-dom';
 import LayoutStruture from '../layout/LayoutStruture';
 import HomePage from '../pages/home';
-import ServicesPage from '../pages/services';
 import PricesPage from '../pages/prices';
+import UserLogin from '../pages/accessUser';
 
 export default function PagesRouter() {
     return (
@@ -13,9 +13,9 @@ export default function PagesRouter() {
                 </LayoutStruture>
             }
             />
-            <Route path='/services' element={
+            <Route path='/access' element={
                 <LayoutStruture>
-                    <ServicesPage />
+                    <UserLogin />
                 </LayoutStruture>
             }
             />

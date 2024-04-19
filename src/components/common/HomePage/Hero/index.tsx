@@ -3,7 +3,7 @@ import Header from '../../../shared/header'
 
 export default function Hero() {
     return (
-        <div className="principal-page">
+        <div className="linear-background"> 
             <Header/>
             <div className=" flex items-center justify-center ">
                 <Container>
