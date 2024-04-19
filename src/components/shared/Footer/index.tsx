@@ -1,10 +1,9 @@
 import { Link } from 'react-router-dom';
 import Container from '../container';
 
-
 export default function Footer() {
   return (
-    <div className='flex items-center justify-center'>
+    <div className='flex items-center justify-center bg-[#082537]'>
       <Container>
         <div className="w-full flex items-center flex-row justify-between py-[30px] px-[80px] flex-wrap">
 

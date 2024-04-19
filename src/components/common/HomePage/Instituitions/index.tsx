@@ -3,7 +3,6 @@ import cm1 from '../../../../components/assets/escolas/cat.jpg';
 import cm2 from '../../../../components/assets/escolas/osbrilhates.png';
 import cm3 from '../../../../components/assets/escolas/martires.png';
 import cm4 from '../../../../components/assets/escolas/girasol.png';
-import cm5 from '../../../../components/assets/escolas/monatower.png';
 
 /***************universidades */
 import um1 from '../../../../components/assets/escolas/catolica.jpg';
@@ -21,7 +20,7 @@ export default function Instituitions() {
                 <section className='flex flex-row justify-between px-3 py-10'>
                     <div className='slider gap-10'>
                         <div className='w-full text-center'>
-                            <h3 className='w-full text-white text-2xl uppercase'>Identifique a Instituição a Qual Pertence</h3>
+                            <h3 className='w-full text-2xl uppercase text-gray-800'>Identifique a Instituição a Qual Pertence</h3>
                         </div>
                         <div className='slide-track '>
                             <div className='slide'>
@@ -35,9 +34,6 @@ export default function Instituitions() {
                             </div>
                             <div className='slide'>
                                 <img className='rounded-[50%] p-3' src={cm4} alt="colegio 4" />
-                            </div>
-                            <div className='slide'>
-                                <img className='rounded-[50%] p-3' src={cm5} alt="colegio 5" />
                             </div>
                             <div className='slide'>
                                 <img className='rounded-[50%] p-3' src={um1} alt="universidade 1" />
