@@ -5,7 +5,11 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'univercity-banner': "url('/banner/banner.png')",
+      }
+    },
   },
   plugins: [],
 }

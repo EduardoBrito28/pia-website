@@ -1,5 +1,5 @@
 import { Link, useLocation } from 'react-router-dom';
-import logo from '../../assets/logo.png'
+import logo from '../../assets/logo.png' 
 import Container from '../container';
 
 export default function Header() {
@@ -15,8 +15,8 @@ export default function Header() {
 					</div>
 					<div className='flex flex-row items-center'>
 						<ul className='flex flex-row gap-2'>
-							<li className='p-3 text-base cursor-pointer list-none' style={pathname === "/university" ? {
-							} : {}}> <Link className='cursor-pointer text-white z-50' to='/university'>Universidades</Link></li>
+							<li className='p-3 text-base cursor-pointer list-none' style={pathname === "/universidade" ? {
+							} : {}}> <Link className='cursor-pointer text-white z-50' to='/universidade'>Universidades</Link></li>
 
 							<li className='p-3 text-base cursor-pointer list-none' style={pathname === "/schools" ? {
 							} : {}}> <Link className='cursor-pointer text-white z-50' to='/schools'>Colégios</Link></li>

@@ -1,8 +1,9 @@
 import { Route, Routes } from 'react-router-dom';
 import LayoutStruture from '../layout/LayoutStruture';
 import HomePage from '../pages/home';
-import ServicesPage from '../pages/services';
-import PricesPage from '../pages/prices';
+import UserLogin from '../pages/login';
+import Register from '../pages/register';
+import Univercity from '../pages/university';
 
 export default function PagesRouter() {
     return (
@@ -13,15 +14,21 @@ export default function PagesRouter() {
                 </LayoutStruture>
             }
             />
-            <Route path='/services' element={
+            <Route path='/universidade' element={
                 <LayoutStruture>
-                    <ServicesPage />
+                    <Univercity />
                 </LayoutStruture>
             }
             />
-            <Route path='/prices' element={
+            <Route path='/access' element={
                 <LayoutStruture>
-                    <PricesPage />
+                    <UserLogin/>
+                </LayoutStruture>
+            }
+            />
+            <Route path='/signup/:id' element={
+                <LayoutStruture>
+                    <Register />
                 </LayoutStruture>
             }
             />

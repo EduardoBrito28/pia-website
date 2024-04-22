@@ -1,7 +1,7 @@
 /*******************************************teaching imag  */
 import teachBase from '../../../../components/assets/img-ensino-basico.png';
 import teachMidia from '../../../../components/assets/img-ensino-superior.png';
-import teachSuper from '../../../../components/assets/img-ensino-basico.png';
+import teachSuper from '../../../../components/assets/img-ensino-continuado.png';
 import Container from '../../../shared/container';
 
 export default function Teaching() {
