@@ -57,7 +57,7 @@ const UserLogin = () => {
                             <Link className='text-[#7745ff] text-center' to="/forgetpassword">Esqueceu a sua palavra pass?</Link>
                         </div>
                         <div className="flex flex-col items-center text-center text-xs">
-                            <button className='bg-[#7745FF] py-2 px-10 text-white rounded-lg mt-[50px]'>
+                            <button className='bg-[#7745FF] px-10 py-3 text-white rounded-lg mt-[50px]'>
                                 <Link className='' to="/signup/1">Acessar</Link>
                             </button>
                         </div>

@@ -44,7 +44,7 @@ export default function Register() {
                                 </div>
                             </div>
                             <div className="flex flex-col items-center text-center font-extralight cursor-pointer ">
-                                <button className='bg-[#7745FF] w-[30%] outline-none rounded-lg text-white border-0 p-2 absolute bottom-[50px] text-[12pt]'><Link to={`/signup/${typeUser === "encarregado" ? '2' : '3'}`}> Avançar</Link> </button>
+                                <button className='bg-[#7745FF] w-[30%] outline-none rounded-lg text-white border-0 px-4 py-3 absolute bottom-[50px] text-[12pt]'><Link to={`/signup/${typeUser === "encarregado" ? '2' : '3'}`}> Avançar</Link> </button>
                             </div>
                         </>
                         : null
@@ -68,7 +68,7 @@ export default function Register() {
                                     <input className='w-full p-2 border border-[#7745FF] rounded-sm text-[10pt]' type="text" placeholder="Insira aqui o seu número de telefone" />
                                 </div>
                                 <div className="flex-1 py-0 px-5 flex flex-col items-center text-center text-[12pt] font-extralight cursor-pointer ">
-                                    <button className='bg-[#7745FF] w-[30%] outline-none rounded-lg text-white border-0 p-2 absolute bottom-[50px]'>Solicitar</button>
+                                    <button className='bg-[#7745FF] w-[30%] outline-none rounded-lg text-white border-0 px-4 py-3 absolute bottom-[50px]'>Solicitar</button>
                                 </div>
                                 <div className='flex items-center p-2 '>
                                     <Link className='text-[#7745FF] text-center' to="/access">Já tenho acesso</Link>
@@ -104,7 +104,7 @@ export default function Register() {
                                     <Link className='text-[#7745FF] text-center' to="/access">Já tenho acesso</Link>
                                 </div>
                                 <div className="flex-1 py-0 px-5 flex flex-col items-center text-center text-[12pt] font-extralight cursor-pointer ">
-                                    <button className='bg-[#7745FF] w-[30%] outline-none rounded-lg text-white border-0 p-2 absolute bottom-[50px]'>Solicitar</button>
+                                    <button className='bg-[#7745FF] w-[30%] outline-none rounded-lg text-white border-0 px-4 py-3 absolute bottom-[50px]'>Solicitar</button>
                                 </div>
                             </div>
                         </>

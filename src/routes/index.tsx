@@ -1,9 +1,12 @@
 import { Route, Routes } from 'react-router-dom';
 import LayoutStruture from '../layout/LayoutStruture';
-import HomePage from '../pages/home';
+import PaymentPage from '../pages/payment';
 import UserLogin from '../pages/login';
 import Register from '../pages/register';
 import Univercity from '../pages/university';
+import HomePage from '../pages/home';
+import RequestAccess from '../pages/requestAccess';
+import SignUp from '../pages/requestAccess/signUp';
 
 export default function PagesRouter() {
     return (
@@ -11,6 +14,12 @@ export default function PagesRouter() {
             <Route path='/' element={
                 <LayoutStruture>
                     <HomePage />
+                </LayoutStruture>
+            }
+            />
+            <Route path='/pagamentos' element={
+                <LayoutStruture>
+                    <PaymentPage />
                 </LayoutStruture>
             }
             />
@@ -22,9 +31,23 @@ export default function PagesRouter() {
             />
             <Route path='/access' element={
                 <LayoutStruture>
-                    <UserLogin/>
+                    <UserLogin />
                 </LayoutStruture>
             }
+            />
+            <Route path='/solicitar-acesso' element={
+                <LayoutStruture>
+                    <RequestAccess />
+                </LayoutStruture>
+            }
+            />
+            <Route
+                path="/sigup/:user"
+                element={
+                    <LayoutStruture>
+                        <SignUp />
+                    </LayoutStruture>
+                }
             />
             <Route path='/signup/:id' element={
                 <LayoutStruture>

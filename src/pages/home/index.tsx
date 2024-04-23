@@ -1,26 +1,18 @@
-import Hero from '../../components/common/HomePage/Hero';
-import Instituitions from '../../components/common/HomePage/Instituitions';
-import Teaching from '../../components/common/HomePage/Teaching';
-import Solution from '../../components/common/HomePage/Solution';
-
+import HomeBanner from "../../components/common/HomePage/Banner";
+import Container from "../../components/shared/container";
+import Header from "../../components/shared/header";
 
 export default function HomePage() {
     return (
-        <div>
-            <Hero />
-            <div className='flex flex-col justify-center'>
-                <div className='w-full bg-gray-100'>
-                    <Instituitions />
-                </div>
-                <div className='w-full py-10 '>
-                    <Teaching />
-                </div>
-                <div className='w-full py-10 '>
-                    <Solution />
-                </div>
-            </div>
-        </div>
 
+        <div className="">
+            <Header />
+            <HomeBanner/>
+            <Container>
+                <div>
+                    Home Page
+                </div>
+            </Container>
+        </div>
     )
 }
-
