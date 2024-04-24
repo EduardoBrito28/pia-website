@@ -7,6 +7,7 @@ import Univercity from '../pages/university';
 import HomePage from '../pages/home';
 import RequestAccess from '../pages/requestAccess';
 import SignUp from '../pages/requestAccess/signUp';
+import NotFound from '../pages/notFound';
 
 export default function PagesRouter() {
     return (
@@ -52,6 +53,13 @@ export default function PagesRouter() {
             <Route path='/signup/:id' element={
                 <LayoutStruture>
                     <Register />
+                </LayoutStruture>
+            }
+            />
+
+            <Route path='*' element={
+                <LayoutStruture>
+                    <NotFound />
                 </LayoutStruture>
             }
             />

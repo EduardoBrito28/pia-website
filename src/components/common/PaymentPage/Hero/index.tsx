@@ -8,7 +8,7 @@ export default function Hero() {
             <Header/>
             <div className=" flex items-center justify-center ">
                 <Container>
-                    <div className='flex items-center flex-col max-h-[900px] h-[100vh]'>
+                    <div className='flex items-center flex-col h-[100vh]'>
                         <header className='w-[90%] flex items-center flex-col justify-center m-auto'>
                             <div className='flex justify-center items-center flex-col gap-3'>
                                 <div className='py-5'>

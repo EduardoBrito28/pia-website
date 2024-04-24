@@ -8,6 +8,7 @@ export default {
     extend: {
       backgroundImage: {
         'univercity-banner': "url('/banner/banner.png')",
+        'rocket': "url('/banner/rocket.jpg')",
       }
     },
   },

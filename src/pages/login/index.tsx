@@ -9,7 +9,7 @@ const UserLogin = () => {
             <Header/>
             <div className='flex items-center justify-center flex-col relative h-[100vh] '>
                 <div className="py-[100px] px-10 bg-white shadow-md rounded-md flex flex-col items-center flex-wrap">
-                    <section className='absolute top-[5%] left-0 right-0 flex justify-center flex-col items-center'>
+                    <section className='absolute top-[100px] left-0 right-0 flex justify-center flex-col items-center'>
                         <div className='text-white text-2xl'>Escolha o acesso clicando no circulo a baixo</div>
                         <div className="flex justify-center p-2">
                             <div className="bg-[#002849] h-5 w-5 rounded-[50%] flex justify-center items-center my-0 mx-1 cursor-pointer" onClick={() => setTypeUser("1")}>
