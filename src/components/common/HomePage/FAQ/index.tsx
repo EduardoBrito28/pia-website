@@ -9,7 +9,7 @@ import {
 export function Faq() {
     return (
         <div className="w-full py-32 flex flex-row items-center justify-center gap-20">
-            <div className="flex flex-col w-[600px] gap-5 items-start justify-center">
+            <div data-aos="fade-down" className="flex flex-col w-[600px] gap-5 items-start justify-center">
                 <h1>Perguntas Frequentes</h1>
                 <p>Alguma dúvida? Veja abaixo as perguntas mais frequentes em relação a adesão e utilização da plataforma P.I.A</p>
                 <Accordion type="single" collapsible className="w-full">
@@ -53,7 +53,7 @@ export function Faq() {
                 </Accordion>
 
             </div>
-            <div className="w-[600px] bg-gray-600 h-60 flex items-center justify-center">
+            <div data-aos-delay="400" data-aos="fade-left" className="w-[600px] bg-gray-600 h-60 flex items-center justify-center">
                 <img src={faq} alt="Frequently Asked Questions" />
             </div>
         </div>
