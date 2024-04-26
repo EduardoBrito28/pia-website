@@ -1,4 +1,3 @@
-import exemple from '../../../../components/assets/exemple2.png';
 import Container from '../../../shared/container';
 
 export default function Solution() {
@@ -15,7 +14,7 @@ export default function Solution() {
                             </div>
                         </div>
                         <div className='flex-1 px-20 order-1 text-[#B6CDCF]'>
-                            <img src={exemple} alt="inlustração" />
+                            <img src='/assets/exemple2.png' alt="inlustração" />
                         </div>
                     </div>
                 </section>

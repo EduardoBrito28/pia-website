@@ -1,11 +1,10 @@
 import { Link } from 'react-router-dom'
-import aboutImage from '../../../assets/HomeImages/payment.jpg'
 
 export function AboutUs() {
     return (
         <div className="w-full flex flex-row items-center justify-center gap-40 py-32">
             <div data-aos-delay="100" data-aos="fade-right" className='w-[550px]'>
-                <img src={aboutImage} alt="Sobre Nós" className='w-full' />
+                <img src={`./assets/HomeImages/payment.jpg`} alt="Sobre Nós" className='w-full' />
             </div>
             <div data-aos-delay="200" data-aos="fade-left" className='w-[600px] flex flex-col gap-4 items-center justify-start'>
                 <h1 className='text-3xl '>Junte-se à PIA hoje e simplifique seus processos de pagamento.</h1>

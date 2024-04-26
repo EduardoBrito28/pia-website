@@ -32,11 +32,11 @@ const UserLogin = () => {
                                 <>
                                     <div>
                                         <label>Número de estudante</label>
-                                        <input className='w-full p-3 border border-[#002849] rounded-sm text-[10pt] focus:outline-none focus:border focus:border-[#002849] opacity-50 transition-[2s]' type="text" placeholder="Insíra o Seu Número de Estudante" />
+                                        <input className='w-full p-3 border border-[#7745FF] rounded-sm text-[10pt] focus:outline-none  opacity-50 transition-[2s]' type="text" placeholder="Insíra o Seu Número de Estudante" />
                                     </div>
-                                    <div>
+                                    <div className='mt-5'>
                                         <label>Senha de acesso</label>
-                                        <input className='w-full p-3 border border-[#002849] rounded-sm text-[10pt] focus:outline-none focus:border focus:border-[#002849] opacity-50 transition-[2s]' type="password" placeholder="Digite a sua senha" />
+                                        <input className='w-full p-3 border border-[#7745FF] rounded-sm text-[10pt] focus:outline-none  opacity-50 transition-[2s]' type="password" placeholder="Digite a sua senha" />
                                     </div>
                                 </> : null
                         }
@@ -45,11 +45,11 @@ const UserLogin = () => {
                                 <>
                                     <div>
                                         <label>Número de telefone ou email</label>
-                                        <input className='w-full p-3 border border-[#002849] rounded-sm text-[10pt] focus:outline-none focus:border focus:border-[#002849] opacity-50 transition-[2s]' type="text" placeholder="Insira o Seu Número de Telefone" />
+                                        <input className='w-full p-3 border border-[#7745FF] rounded-sm text-[10pt] focus:outline-none  opacity-50 transition-[2s]' type="text" placeholder="Insira o Seu Número de Telefone" />
                                     </div>
                                     <div>
                                         <label>Senha de acesso</label>
-                                        <input className='w-full p-3 border border-[#002849] rounded-sm text-[10pt] focus:outline-none focus:border focus:border-[#002849] opacity-50 transition-[2s]' type="password" placeholder="Digite a sua senha" />
+                                        <input className='w-full p-3 border border-[#7745FF] rounded-sm text-[10pt] focus:outline-none  opacity-50 transition-[2s]' type="password" placeholder="Digite a sua senha" />
                                     </div>
                                 </> : null
                         }

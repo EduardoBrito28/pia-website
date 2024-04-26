@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import Container from "../../components/shared/container";
 import { useLocation, useNavigate, useParams } from "react-router-dom";
-import Logo from "../../components/assets/logo.png";
 import { StapSecand, StapStart, StapThird } from "../../components/Forms/Register";
 import Header from "../../components/shared/header";
 
@@ -24,7 +23,7 @@ export default function SignUp() {
                     <div className="w-full bg-blue-900 bg-fixed bg-no-repeat flex justify-between h-[750px] py-36">
                         <div className="flex flex-1 justify-center p-5 items-center border-r">
                             <div className="">
-                                <img src={Logo} alt="PCO Logo" className="w-[300px] mb-[50px]" />
+                                <img src='/assets/logo.png' alt="PCO Logo" className="w-[300px] mb-[50px]" />
                                 <h3 className="text-white pco" style={{ fontSize: "2em" }}>
                                     P.I.A. DIRECTO EM SUA CASA
                                 </h3>

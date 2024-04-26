@@ -1,4 +1,3 @@
-import faq from '../../../assets/HomeImages/faq.jpg'
 import {
     Accordion,
     AccordionContent,
@@ -54,7 +53,7 @@ export function Faq() {
 
             </div>
             <div data-aos-delay="400" data-aos="fade-left" className="w-[600px] bg-gray-600 h-60 flex items-center justify-center">
-                <img src={faq} alt="Frequently Asked Questions" />
+                <img src='./assets/HomeImages/faq.jpg' alt="Frequently Asked Questions" />
             </div>
         </div>
     )

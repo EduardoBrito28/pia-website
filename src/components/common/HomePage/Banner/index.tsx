@@ -1,11 +1,10 @@
 import { Link } from 'react-router-dom';
-import VideoBanner from '../../../assets/Home-banner/Earth-Animation.mp4';
 
 export default function HomeBanner() {
     return (
         <div className="w-full h-[100vh] relative">
             <div className='absolute top-0 left-0 w-full h-full bg-black opacity-70'></div>
-            <video className='w-full h-full object-cover' src={VideoBanner} autoPlay loop muted></video>
+            <video className='w-full h-full object-cover' src={`./assets/Home-banner/Earth-Animation.mp4`} autoPlay loop muted></video>
             <div className='absolute mt-24 w-full h-full text-center top-0 flex flex-col justify-center items-center text-white'>
                 <h1 data-aos="zoom-in" className='w-[700px]'>P.I.A. O sistema que visa melhorar a forma de pagamento do sistema de ensino angolano</h1>
                 <div data-aos-delay="200" data-aos="zoom-in" className='flex items-center justify-around pt-5'>

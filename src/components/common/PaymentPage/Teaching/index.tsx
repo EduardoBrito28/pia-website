@@ -1,7 +1,3 @@
-/*******************************************teaching imag  */
-import teachBase from '../../../../components/assets/img-ensino-basico.png';
-import teachMidia from '../../../../components/assets/img-ensino-superior.png';
-import teachSuper from '../../../../components/assets/img-ensino-continuado.png';
 import Container from '../../../shared/container';
 
 export default function Teaching() {
@@ -21,7 +17,7 @@ export default function Teaching() {
                         <div className='w-full flex flex-row justify-between items-center px-40 pt-10 text-gray-800 text-center'>
 
                             <div>
-                                <img src={teachBase} />
+                                <img src='/assets/img-ensino-basico.png' />
                                 <div>
                                     <span>Ensino</span>
                                     <h3 className='text-[2em] text-gray-600'>Básico</h3>
@@ -29,7 +25,7 @@ export default function Teaching() {
                             </div>
 
                             <div>
-                                <img src={teachMidia} />
+                                <img src='/assets/img-ensino-superior.png' />
                                 <div>
                                     <span>Ensino</span>
                                     <h3 className='text-[2em] text-gray-600'>Médio</h3>
@@ -37,7 +33,7 @@ export default function Teaching() {
                             </div>
 
                             <div>
-                                <img src={teachSuper} />
+                                <img src='/assets/img-ensino-continuado.png' />
                                 <div>
                                     <span>Ensino</span>
                                     <h3 className='text-[2em] text-gray-600'>Superior</h3>
