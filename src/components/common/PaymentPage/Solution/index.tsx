@@ -1,9 +1,9 @@
-import exemple from '../../../../components/assets/exemple.png';
+import exemple from '../../../../components/assets/exemple2.png';
 import Container from '../../../shared/container';
 
 export default function Solution() {
     return (
-        <div className='flex items-center justify-center'>
+        <div className='flex items-center justify-center'>  
             <Container>
                 <section className='w-full flex flex-col justify-center items-center h-auto'>
                     <div className='flex justify-between items-center px-20'>
