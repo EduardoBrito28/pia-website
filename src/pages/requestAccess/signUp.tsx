@@ -9,8 +9,6 @@ export default function SignUp() {
 
     const [stap, setStap] = useState(0);
     const navigate = useNavigate();
-    const dt = new Date();
-    const x = dt.getTime();
     const { user }: any = useParams();
     const location = useLocation();
     useEffect(() => {
