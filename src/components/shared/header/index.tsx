@@ -1,5 +1,6 @@
 import { Link, useLocation } from 'react-router-dom';
 import logo from '../../assets/logo.png'
+import logo2 from '../../assets/logo-sticky.png'
 import Container from '../container';
 import { useEffect, useState } from 'react';
 
@@ -25,7 +26,7 @@ export default function Header() {
 				<div className='w-full flex justify-between items-center h-20 sticky'>
 					<div>
 						<Link to='/'>
-							<img src={logo} alt='logo' className='h-[80px]' />
+							{ sticky ? <img src={logo2} alt='logo' className='h-[80px]' /> : <img src={logo} alt='logo' className='h-[80px]' /> }
 						</Link>
 					</div>
 					<div className='flex flex-row items-center'>

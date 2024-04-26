@@ -8,6 +8,7 @@ import HomePage from '../pages/home';
 import RequestAccess from '../pages/requestAccess';
 import SignUp from '../pages/requestAccess/signUp';
 import NotFound from '../pages/notFound';
+import GetStarted from '@/pages/getStarted';
 
 export default function PagesRouter() {
     return (
@@ -56,7 +57,10 @@ export default function PagesRouter() {
                 </LayoutStruture>
             }
             />
-
+            <Route path='/get-started' element={
+                <GetStarted />
+            }
+            />
             <Route path='*' element={
                 <LayoutStruture>
                     <NotFound />
