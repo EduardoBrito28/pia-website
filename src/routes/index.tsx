@@ -1,8 +1,14 @@
 import { Route, Routes } from 'react-router-dom';
 import LayoutStruture from '../layout/LayoutStruture';
+import PaymentPage from '../pages/payment';
+import UserLogin from '../pages/login';
+import Register from '../pages/register';
+import Univercity from '../pages/university';
 import HomePage from '../pages/home';
-import PricesPage from '../pages/prices';
-import UserLogin from '../pages/accessUser';
+import RequestAccess from '../pages/requestAccess';
+import SignUp from '../pages/requestAccess/signUp';
+import NotFound from '../pages/notFound';
+import GetStarted from '@/pages/getStarted';
 
 export default function PagesRouter() {
     return (
@@ -13,15 +19,51 @@ export default function PagesRouter() {
                 </LayoutStruture>
             }
             />
+            <Route path='/pagamentos' element={
+                <LayoutStruture>
+                    <PaymentPage />
+                </LayoutStruture>
+            }
+            />
+            <Route path='/universidade' element={
+                <LayoutStruture>
+                    <Univercity />
+                </LayoutStruture>
+            }
+            />
             <Route path='/access' element={
                 <LayoutStruture>
                     <UserLogin />
                 </LayoutStruture>
             }
             />
-            <Route path='/prices' element={
+            <Route path='/solicitar-acesso' element={
                 <LayoutStruture>
-                    <PricesPage />
+                    <RequestAccess />
+                </LayoutStruture>
+            }
+            />
+            <Route
+                path="/sigup/:user"
+                element={
+                    <LayoutStruture>
+                        <SignUp />
+                    </LayoutStruture>
+                }
+            />
+            <Route path='/signup/:id' element={
+                <LayoutStruture>
+                    <Register />
+                </LayoutStruture>
+            }
+            />
+            <Route path='/get-started' element={
+                <GetStarted />
+            }
+            />
+            <Route path='*' element={
+                <LayoutStruture>
+                    <NotFound />
                 </LayoutStruture>
             }
             />

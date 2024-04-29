@@ -1,26 +1,29 @@
-import Hero from '../../components/common/HomePage/Hero';
-import Instituitions from '../../components/common/HomePage/Instituitions';
-import Teaching from '../../components/common/HomePage/Teaching';
-import Solution from '../../components/common/HomePage/Solution';
-
+import { AboutUs } from "../../components/common/HomePage/AboutUs";
+import HomeBanner from "../../components/common/HomePage/Banner";
+import { Faq } from "../../components/common/HomePage/FAQ";
+import { Price } from "../../components/common/HomePage/Price";
+import { ServiceWeProvide } from "../../components/common/HomePage/ServicesWeProvide";
+import Container from "../../components/shared/container";
+import Header from "../../components/shared/header";
 
 export default function HomePage() {
     return (
-        <div>
-            <Hero />
-            <div className='flex flex-col justify-center'>
-                <div className='w-full bg-gray-100'>
-                    <Instituitions />
-                </div>
-                <div className='w-full py-10 '>
-                    <Teaching />
-                </div>
-                <div className='w-full py-10 '>
-                    <Solution />
-                </div>
-            </div>
-        </div>
 
+        <div className="">
+            <Header />
+            <HomeBanner />
+            <Container>
+                <AboutUs />
+            </Container>
+            <div className="bg-rocket object-cover object-center bg-center w-full bg-[#7745FF]">
+                <Container>
+                    <ServiceWeProvide />
+                </Container>
+            </div>
+            <Container>
+                <Price />
+                <Faq/>
+            </Container>
+        </div>
     )
 }
-
