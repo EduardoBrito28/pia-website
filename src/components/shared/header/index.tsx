@@ -80,7 +80,7 @@ export default function Header() {
 									`} to='/access'>Entrar</Link>
 							</li>
 							<li className={`p-3 text-base cursor-pointer list-none flex items-center justify-center px-4 bg-[#00A3E6] rounded-sm`}>
-								<Link className={`cursor-pointer  z-50 text-white`} to={`${pathname === '/' ? '/solicitar-acesso' : '/signup/1'}`}>{pathname === '/' ? 'Solicitar Acesso' : 'Cadastrar-se'}</Link>
+								<Link className={`cursor-pointer  z-50 text-white`} to={`${pathname === '/' ? '/get-started' : '/get-started'}`}>{pathname === '/' ? 'Acessar' : 'Acessar'}</Link>
 							</li>
 						</ul>
 					</div>

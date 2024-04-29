@@ -5,7 +5,7 @@ export default function GetStarted() {
     return (
         <div className="w-full h-[100vh] flex flex-col items-start justify-start bg-gradient-to-r from-[#FDF8EA] to-[#ECF0EE] py-2 px-40">
             <div className="w-full flex items-center justify-between ">
-                <img src='/assets/logo-sticky.png' alt="Logomarca" className='w-[150px]' />
+                <img src='/assets/logo-sticky2.png' alt="Logomarca" className='w-[150px] ' />
                 <Link to={`/`} className='flex gap-2 items-center'>
                     <p>Fechar</p>
                     <MdOutlineClose className='text-xl' />
