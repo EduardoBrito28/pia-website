@@ -24,7 +24,7 @@ export default function Header() {
 				<div className='w-full flex justify-between items-center h-20 sticky'>
 					<div>
 						<Link to='/'>
-							{ sticky ? <img src='/assets/logo-sticky.png' alt='logo' className='h-[80px]' /> : <img src='/assets/logo.png' alt='logo' className='h-[80px]' /> }
+							{ sticky ? <img src='/assets/logo-sticky2.png' alt='logo' className='h-[80px]' /> : <img src='/assets/logo.png' alt='logo' className='h-[80px]' /> }
 						</Link>
 					</div>
 					<div className='flex flex-row items-center'>
