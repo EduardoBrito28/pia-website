@@ -51,44 +51,56 @@ export default function SignUp() {
                                         </div>
                                     </div>
                                 </div>
-                                {stap === 1 || stap === 2 ? (
-                                    <>
-                                        <div className="card-register">
-                                            <StapStart />
+                                {
+                                    stap === 1 || stap === 2 ? (
+                                        <>
+                                            <div className="card-register">
+                                                <StapStart />
+                                                <div className="p-3 w-full flex justify-end">
+                                                    <button className="py-3 px-10 rounded-sm text-white outline-none bg-[#00A3E6]" onClick={() => navigate(`/sigup/8`)}>
+                                                        Prosseguir
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </>
+                                    )
+                                        :
+                                        null
+                                }
+
+                                {
+                                    stap === 8 ? (
+                                        <>
+                                            <div className="card-register">
+                                                <StapSecand />
+                                            </div>
                                             <div className="p-3 w-full flex justify-end">
-                                                <button className="py-3 px-10 rounded-sm text-white outline-none bg-[#00A3E6]" onClick={() => navigate(`/sigup/8`)}>
+                                                <button className="py-3 px-10 rounded-sm text-white outline-none bg-[#00A3E6]" onClick={() => navigate(`/sigup/9`)}>
                                                     Prosseguir
                                                 </button>
                                             </div>
-                                        </div>
-                                    </>
-                                ) : null}
+                                        </>
+                                    )
+                                        :
+                                        null
+                                }
 
-                                {stap === 8 ? (
-                                    <>
-                                        <div className="card-register">
-                                            <StapSecand />
-                                        </div>
-                                        <div className="p-3 w-full flex justify-end">
-                                            <button className="py-3 px-10 rounded-sm text-white outline-none bg-[#00A3E6]" onClick={() => navigate(`/sigup/9`)}>
-                                                Prosseguir
-                                            </button>
-                                        </div>
-                                    </>
-                                ) : null}
-
-                                {stap === 9 ? (
-                                    <>
-                                        <div className="card-register">
-                                            <StapThird />
-                                        </div>
-                                        <div className="p-3 w-full flex justify-end">
-                                            <button className="py-3 px-10 rounded-sm text-white outline-none bg-[#00A3E6]" onClick={() => navigate(`/sorry`)}>
-                                                Prosseguir
-                                            </button>
-                                        </div>
-                                    </>
-                                ) : null}
+                                {
+                                    stap === 9 ? (
+                                        <>
+                                            <div className="card-register">
+                                                <StapThird />
+                                            </div>
+                                            <div className="p-3 w-full flex justify-end">
+                                                <button className="py-3 px-10 rounded-sm text-white outline-none bg-[#00A3E6]" onClick={() => navigate(`/sorry`)}>
+                                                    Prosseguir
+                                                </button>
+                                            </div>
+                                        </>
+                                    )
+                                        :
+                                        null
+                                }
                             </div>
                         </div>
                     </div>

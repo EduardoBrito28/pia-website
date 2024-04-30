@@ -24,7 +24,7 @@ export default function Header() {
 				<div className='w-full flex justify-between items-center h-20 sticky'>
 					<div>
 						<Link to='/'>
-							{ sticky ? <img src='/assets/logo-sticky.png' alt='logo' className='h-[80px]' /> : <img src='/assets/logo.png' alt='logo' className='h-[80px]' /> }
+							{sticky ? <img src='/assets/logo-sticky.png' alt='logo' className='h-[80px]' /> : <img src='/assets/logo.png' alt='logo' className='h-[80px]' />}
 						</Link>
 					</div>
 					<div className='flex flex-row items-center'>
@@ -70,13 +70,11 @@ export default function Header() {
 									`} to='/price'>Preços</Link>
 							</li>
 							<li className={`p-3 text-base cursor-pointer list-none`}>
-								<Link className={`cursor-pointer  z-50 
-									
+								<Link className={`cursor-pointer  z-50
 									${pathname === "/access" && sticky ? 'text-[#2CACE4]' :
 										pathname !== '/access' && sticky ? 'text-black' :
 											pathname === "/access" && !sticky ? 'text-[#2CACE4]' :
 												'text-white'}
-									
 									`} to='/access'>Entrar</Link>
 							</li>
 							<li className={`p-3 text-base cursor-pointer list-none flex items-center justify-center px-4 bg-[#00A3E6] rounded-sm`}>

@@ -19,7 +19,7 @@ export default function RequestAccess() {
         <div className="linear-background">
             <Header />
             <Container>
-                <div className="py-[150px]"> 
+                <div className="py-[150px]">
                     <div className="w-full bg-blue-900 rounded-sm flex justify-center flex-row items-center h-[750px]">
                         <div className="flex-2 flex justify-center flex-col items-center">
                             <h1 className="text-[2em] font-bold text-white text-center p-[1em]">
@@ -40,7 +40,7 @@ export default function RequestAccess() {
                                 <div className="my-[4%] mx-auto border-l border-[#ddd] p-7">
                                     <div className="my-3 mx-auto flex items-start gap-2">
                                         <div className="pt-2">
-                                            <input 
+                                            <input
                                                 className="w-5 h-5 rounded-sm placeholder:opacity-80 text-lg"
                                                 type="radio"
                                                 name="instituition"
@@ -61,7 +61,7 @@ export default function RequestAccess() {
 
                                     <div className="my-3 mx-auto flex items-start gap-2 pt-10">
                                         <div className="pt-2">
-                                            <input 
+                                            <input
                                                 className="w-5 h-5 rounded-sm placeholder:opacity-80 text-lg"
                                                 type="radio"
                                                 name="instituition"
@@ -84,7 +84,9 @@ export default function RequestAccess() {
 
                                     <div className="mt-[3rem] p-2">
                                         <Link to={`/sigup/${x * 100}${idUser}`}>
-                                            <button className="border-0 py-3 px-10 rounded-sm text-white font-semibold decoration-0 text-center bg-[#347BB8] hover:bg-[#2b6496] hover:text-white focus:outline-none focus:opacity-80" type="button">Avançar</button>
+                                            <button className="border-0 py-3 px-10 rounded-sm text-white font-semibold decoration-0 text-center bg-[#347BB8] hover:bg-[#2b6496] hover:text-white focus:outline-none focus:opacity-80" type="button">
+                                                Avançar
+                                            </button>
                                         </Link>
                                     </div>
                                 </div>
