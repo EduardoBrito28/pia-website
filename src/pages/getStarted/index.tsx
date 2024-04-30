@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { MdOutlineClose } from "react-icons/md";
 import { ChangeEvent, useState } from 'react';
+import { getMarvelApi } from '@/services/APIServices';
 
 export default function GetStarted() { 
 
